@@ -1,0 +1,219 @@
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+		android:id="@+id/title"
+        android:text="@string/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp"
+        />
+
+    <TextView
+        android:id="@+id/halfBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_widthPercent="50%"
+        android:layout_alignParentRight="true"
+        android:text="50% of width"
+        android:textSize="12sp"
+        android:background="@color/red8"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/halfBar"
+        app:layout_widthPercent="50%"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        >
+
+        <ToggleButton
+            android:id="@+id/button_half"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Show 1/2"
+            android:textOn="Hide 1/2"
+            android:textSize="12sp"
+            android:background="@drawable/btn_show"
+            />
+
+        <ToggleButton
+            android:id="@+id/button_quarter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Show 1/4"
+            android:textOn="Hide 1/4"
+            android:textSize="12sp"
+            android:background="@drawable/btn_show"
+            />
+
+        <ToggleButton
+            android:id="@+id/button_fifth"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Show 1/5"
+            android:textOn="Hide 1/5"
+            android:textSize="12sp"
+            android:background="@drawable/btn_show"
+            />
+
+        <ToggleButton
+            android:id="@+id/button_decimal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Show 1/10"
+            android:textOn="Hide 1/10"
+            android:textSize="12sp"
+            android:background="@drawable/btn_show"
+            />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/layoutButtons"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/halfBar"
+        android:layout_toLeftOf="@+id/buttons"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="30dp"
+        android:orientation="horizontal"
+        >
+
+        <ToggleButton
+            android:id="@+id/button_relative"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Relative"
+            android:textOn="Relative"
+            android:textSize="12sp"
+            android:background="@drawable/btn_show"
+            android:checked="true"
+            />
+
+        <ToggleButton
+            android:id="@+id/button_vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Vertical"
+            android:textOn="Vertical"
+            android:textSize="12sp"
+            android:background="@drawable/btn_show"
+            />
+
+        <ToggleButton
+            android:id="@+id/button_horizontal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Horizontal"
+            android:textOn="Horizontal"
+            android:textSize="12sp"
+            android:background="@drawable/btn_show"
+            />
+
+        <ToggleButton
+            android:id="@+id/button_linear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textOff="Linear"
+            android:textOn="Linear"
+            android:textSize="12sp"
+            android:background="@drawable/btn_show"
+            />
+
+    </RadioGroup>
+
+    <include
+        android:id="@+id/graph"
+        layout="@layout/fragment_percent_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        />
+
+    <include
+        android:id="@+id/percent_vertical"
+        layout="@layout/fragment_percent_relative_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:id="@+id/percent_horizontal"
+        layout="@layout/fragment_percent_relative_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:id="@+id/linear_horizontal"
+        layout="@layout/fragment_percent_linear_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_marginTopPercent="17%"
+        app:layout_heightPercent="20%"
+        android:layout_below="@id/title"
+        android:visibility="invisible"
+        />
+
+    <include
+        android:id="@+id/grid_half"
+        layout="@layout/grid_half"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/grid_decimal"
+        layout="@layout/grid_decimal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/grid_quarter"
+        layout="@layout/grid_quarter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:visibility="gone"
+        />
+
+    <include
+        android:id="@+id/grid_fifth"
+        layout="@layout/grid_fifth"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title"
+        android:visibility="gone"
+        />
+
+</android.support.percent.PercentRelativeLayout>

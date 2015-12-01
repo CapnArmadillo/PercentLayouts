@@ -1,0 +1,594 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+	android:orientation="vertical"
+    >
+
+    <TextView
+		android:id="@+id/title"
+        android:text="@string/linear"
+		android:textSize="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+	<RadioGroup
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:checkedButton="@+id/widthAll"
+		>
+
+		<RadioButton
+			android:id="@id/widthAll"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="All widths"
+			android:layout_weight="1"
+			/>
+
+		<RadioButton
+			android:id="@+id/zeroDP"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="0dp"
+			android:layout_weight="1"
+			/>
+
+		<RadioButton
+			android:id="@+id/wrapContent"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="wrap_content"
+			android:layout_weight="1"
+			/>
+
+		<RadioButton
+			android:id="@+id/matchParent"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="match_parent"
+			android:layout_weight="1"
+			/>
+
+	</RadioGroup>
+
+	<RadioGroup
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:checkedButton="@+id/weightAll"
+		>
+
+		<RadioButton
+			android:id="@id/weightAll"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="All weights"
+			android:layout_weight="1"
+			/>
+
+		<RadioButton
+			android:id="@+id/weight0"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="0"
+			android:layout_weight="1"
+			/>
+
+		<RadioButton
+			android:id="@+id/weight1"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="1"
+			android:layout_weight="1"
+			/>
+
+		<RadioButton
+			android:id="@+id/weight2"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:text="1, 2, 3"
+			android:layout_weight="1"
+			/>
+
+	</RadioGroup>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			>
+
+			<TextView
+				android:id="@+id/zeroDP0label"
+				android:text="LinearLayout with 0dp widths and weights = 0"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/zeroDP0"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="0"
+					/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="Two"
+					android:layout_weight="0"
+					/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="Three"
+					android:layout_weight="0"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/wrapContent0label"
+				android:text="LinearLayout with wrap_content widths and weights = 0"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/wrapContent0"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="0"
+					/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="Two Two"
+					android:layout_weight="0"
+					/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="Three Three Three"
+					android:layout_weight="0"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/matchParent0label"
+				android:text="LinearLayout with match_parent widths and weights = 0"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/matchParent0"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="0"
+					/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="Two Two"
+					android:layout_weight="0"
+					/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="Three Three Three"
+					android:layout_weight="0"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/zeroDP1label"
+				android:text="LinearLayout with 0dp widths and weights = 1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/zeroDP1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="Two"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="Three"
+					android:layout_weight="1"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/wrapContent1label"
+				android:text="LinearLayout with wrap_content widths and weights = 1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/wrapContent1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="Two Two"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="Three Three Three"
+					android:layout_weight="1"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/matchParent1label"
+				android:text="LinearLayout with match_parent widths and weights = 1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/matchParent1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="Two Two"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="Three Three Three"
+					android:layout_weight="1"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/various1label"
+				android:text="LinearLayout with various widths and weights = 1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/various1"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="Two Two"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="Three Three Three"
+					android:layout_weight="1"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/zeroDP2label"
+				android:text="LinearLayout with 0dp widths and weights = 1, 2, 3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/zeroDP2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="Two"
+					android:layout_weight="2"
+					/>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="Three"
+					android:layout_weight="3"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/wrapContent2label"
+				android:text="LinearLayout with wrap_content widths and weights = 1, 2, 3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/wrapContent2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="Two"
+					android:layout_weight="2"
+					/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="Three"
+					android:layout_weight="3"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/wrapContent3label"
+				android:text="LinearLayout with wrap_content widths and weights = 1, 2, 3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/wrapContent3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="Two Two"
+					android:layout_weight="2"
+					/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="Three Three Three"
+					android:layout_weight="3"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/matchParent2label"
+				android:text="LinearLayout with match_parent widths and weights = 1, 2, 3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/matchParent2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="Two"
+					android:layout_weight="2"
+					/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="Three"
+					android:layout_weight="3"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/matchParent3label"
+				android:text="LinearLayout with match_parent widths and weights = 1, 1.5, 2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/matchParent3"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="Two"
+					android:layout_weight="1.5"
+					/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="Three"
+					android:layout_weight="2"
+					/>
+
+			</LinearLayout>
+
+			<TextView
+				android:id="@+id/various2label"
+				android:text="LinearLayout with various widths and weights"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				/>
+
+			<LinearLayout
+				android:id="@+id/various2"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				>
+
+				<Button
+					android:layout_width="0dp"
+					android:layout_height="40dp"
+					android:text="One"
+					android:layout_weight="1"
+					/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="40dp"
+					android:text="Two Two"
+					/>
+
+				<Button
+					android:layout_width="match_parent"
+					android:layout_height="40dp"
+					android:text="Three Three Three"
+					android:layout_weight="1"
+					/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</LinearLayout>

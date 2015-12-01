@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.percent.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentBottom="true"
+        android:background="#3a2"
+        app:layout_widthPercent="100%"
+        app:layout_heightPercent="60%"
+        android:tag="\n100/60\nalignParentBottom"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#594"
+        app:layout_marginLeftPercent="22%"
+        app:layout_widthPercent="15%"
+        app:layout_heightPercent="100%"
+        android:tag="15/100\nleft22"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/top_right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/title"
+        android:background="#e22"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"
+        android:tag="\n\n50/50\nalignParentRight"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/top_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#4ac"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="20%"
+        android:tag="20/20\ntop0\nleft0"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/center"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true"
+        android:background="#cc4"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="20%"
+        android:tag="20/20\ncenter"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/center_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_marginTopPercent="15%"
+        app:layout_marginLeftPercent="15%"
+        android:background="#cc4"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="20%"
+        android:tag="20/20\nleft15\ntop15"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/center_right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_marginTopPercent="70%"
+        app:layout_marginLeftPercent="70%"
+        android:background="#cc4"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="20%"
+        android:tag="20/20\nleft70\ntop70"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+</android.support.percent.PercentRelativeLayout>
+
+    

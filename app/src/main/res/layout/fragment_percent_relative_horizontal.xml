@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.percent.PercentRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/top_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#4ac"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="20%"
+        android:tag="20/20\ntop0\nleft0"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/top2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@id/top_left"
+        android:background="#49a"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="20%"
+        android:tag="20/20\ntoRightOf"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/top3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@id/top2"
+        android:background="#488"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="20%"
+        android:tag="20/20\ntoRightOf"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/top4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@id/top3"
+        android:background="#476"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="20%"
+        android:tag="20/20\ntoRightOf"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/top5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@id/top4"
+        android:background="#464"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="20%"
+        android:tag="20/20\ntoRightOf"
+        android:textSize="12sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/top5aligned"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@id/top4"
+        android:layout_below="@id/top5"
+        android:layout_alignParentRight="true"
+        android:background="#646"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="20%"
+        android:tag="20/20\nrightAligned"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+</android.support.percent.PercentRelativeLayout>
+
+    

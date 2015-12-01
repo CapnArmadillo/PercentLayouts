@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:id="@+id/row1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_thickness"
+        app:layout_marginTopPercent="10%"
+        android:background="@drawable/dashed_horiz"
+        />
+
+    <View
+        android:id="@+id/row2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_thickness"
+        app:layout_marginTopPercent="20%"
+        android:background="@drawable/dashed_horiz"
+        />
+
+    <View
+        android:id="@+id/row3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_thickness"
+        app:layout_marginTopPercent="30%"
+        android:background="@drawable/dashed_horiz"
+        />
+
+    <View
+        android:id="@+id/row4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_thickness"
+        app:layout_marginTopPercent="40%"
+        android:background="@drawable/dashed_horiz"
+        />
+
+    <View
+        android:id="@+id/row5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_thickness"
+        app:layout_marginTopPercent="50%"
+        android:background="@drawable/dashed_horiz"
+        />
+
+    <View
+        android:id="@+id/row6"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_thickness"
+        app:layout_marginTopPercent="60%"
+        android:background="@drawable/dashed_horiz"
+        />
+
+    <View
+        android:id="@+id/row7"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_thickness"
+        app:layout_marginTopPercent="70%"
+        android:background="@drawable/dashed_horiz"
+        />
+
+    <View
+        android:id="@+id/row8"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_thickness"
+        app:layout_marginTopPercent="80%"
+        android:background="@drawable/dashed_horiz"
+        />
+
+    <View
+        android:id="@+id/row9"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/grid_thickness"
+        app:layout_marginTopPercent="90%"
+        android:background="@drawable/dashed_horiz"
+        />
+
+    <View
+        android:id="@+id/col1"
+        android:layout_width="@dimen/grid_thickness"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="10%"
+        android:background="@drawable/dashed_vert"
+        />
+
+    <View
+        android:id="@+id/col2"
+        android:layout_width="@dimen/grid_thickness"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="20%"
+        android:background="@drawable/dashed_vert"
+        />
+
+    <View
+        android:id="@+id/col3"
+        android:layout_width="@dimen/grid_thickness"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="30%"
+        android:background="@drawable/dashed_vert"
+        />
+
+    <View
+        android:id="@+id/col4"
+        android:layout_width="@dimen/grid_thickness"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="40%"
+        android:background="@drawable/dashed_vert"
+        />
+
+    <View
+        android:id="@+id/col5"
+        android:layout_width="@dimen/grid_thickness"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="50%"
+        android:background="@drawable/dashed_vert"
+        />
+
+    <View
+        android:id="@+id/col6"
+        android:layout_width="@dimen/grid_thickness"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="60%"
+        android:background="@drawable/dashed_vert"
+        />
+
+    <View
+        android:id="@+id/col7"
+        android:layout_width="@dimen/grid_thickness"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="70%"
+        android:background="@drawable/dashed_vert"
+        />
+
+    <View
+        android:id="@+id/col8"
+        android:layout_width="@dimen/grid_thickness"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="80%"
+        android:background="@drawable/dashed_vert"
+        />
+
+    <View
+        android:id="@+id/col9"
+        android:layout_width="@dimen/grid_thickness"
+        android:layout_height="match_parent"
+        app:layout_marginLeftPercent="90%"
+        android:background="@drawable/dashed_vert"
+        />
+
+</android.support.percent.PercentRelativeLayout>
+
